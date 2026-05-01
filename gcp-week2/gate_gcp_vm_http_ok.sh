@@ -4,7 +4,7 @@ set -euo pipefail
 # this metadata key is helpful! 
 gcloud compute instances create <week2instance-automation> \
   --tags=http-server \
-  --metadata=startup-script-url=<week-1/scripts/expanded-start-up.shweek-1/scripts/expanded-start-up.sh>
+  --metadata=startup-script-url=<gcp-week2/expanded-start-up.sh>
 
   gcloud compute instances list
 
