@@ -2,13 +2,13 @@
 set -euo pipefail
 
 # this metadata key is helpful! 
-gcloud compute instances create <week2instance-automation> \
+gcloud compute instances create week2instance-automation \
   --tags=http-server \
-  --metadata=startup-script-url=<gcp-week2/expanded-start-up.sh>
+  --metadata=startup-script-url=gcp-week2/expanded-start-up.sh
 
   gcloud compute instances list
 
-gcloud compute instances describe <week2instance-automation> \
+gcloud compute instances describe week2instance-automation \
 --zone=us-west1-b \
 --format="yaml(name,status,zone,tags,metadata,networkInterfaces)"
 
