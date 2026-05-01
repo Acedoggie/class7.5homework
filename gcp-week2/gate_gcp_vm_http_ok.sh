@@ -9,7 +9,7 @@ gcloud compute instances create week2instance-automation \
   gcloud compute instances list
 
 gcloud compute instances describe week2instance-automation \
---zone=us-west1-b \
+--zone="us-west1-b" \
 --format="yaml(name,status,zone,tags,metadata,networkInterfaces)"
 
 
